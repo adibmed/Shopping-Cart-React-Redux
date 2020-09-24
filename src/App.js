@@ -1,20 +1,12 @@
-import React from 'react'; 
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from './Home';
 
 function App() {
   return (
-    <div className="app">
-      <header className="App-header">
-       <nav>
-         <h2>Shop</h2>
-         <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Cart</a></li>
-         </ul>
-       </nav>
-      </header>
-    </div>
+   <div>
+     <Home />
+   </div>
   );
 }
 
