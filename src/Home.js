@@ -4,7 +4,10 @@ function Home() {
   return (
     <div className="app">
       <header>
-        <div className="overlay"></div>
+        <div className="product">
+            <h1 >I am a fucking product</h1>
+            <button>add to cart</button>
+        </div>
        
       </header>
     </div>
