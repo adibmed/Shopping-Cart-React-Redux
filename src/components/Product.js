@@ -1,7 +1,7 @@
 import React from "react";
 import "./Product.css";
 
-function Poroduct({ image, title, caption, price, props }) {
+function Poroduct({ id, image, title, caption, price, props }) {
   return (
     <div className="product">
       <img src={image} alt="" />
@@ -12,6 +12,7 @@ function Poroduct({ image, title, caption, price, props }) {
         <button
           onClick={() =>
             props.addBasket({
+              id: id,
               image: image,
               title: title,
               caption: caption,

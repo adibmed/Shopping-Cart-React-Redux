@@ -10,6 +10,7 @@ const Home = (props) => {
       <div className="home__container">
         <div className="home__containerRow">
           <Product
+            id={1000}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/10713533_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$&fmt=webp"
             title="Aviator Nation"
             caption="Rainbow-Stripe Hoodie"
@@ -17,6 +18,7 @@ const Home = (props) => {
             props={props}
           />
           <Product
+            id={1001}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/2/optimized/11056102_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$&fmt=webp"
             title="ALTERNATIVE"
             caption="Washed Terry Tie-Dye Boyfriend Sweatshirt"
@@ -24,6 +26,7 @@ const Home = (props) => {
             props={props}
           />
           <Product
+            id={1002}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/9/optimized/11082729_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$&fmt=webp"
             title="Velvet by Graham & Spencer"
             caption="Tami Mock Neck Sweatshirt"
@@ -31,6 +34,7 @@ const Home = (props) => {
             props={props}
           />
           <Product
+            id={1003}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/10629635_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$&fmt=webp"
             title="Cotton Citizen"
             caption="Milan Cropped Sweatshirt"
@@ -40,6 +44,7 @@ const Home = (props) => {
         </div>
         <div className="home__containerRow">
           <Product
+            id={1004}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11080021_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&$filtersm$&fmt=webp"
             title="AQUA"
             caption="Star Print Hoodie - 100% Exclusive"
@@ -47,6 +52,7 @@ const Home = (props) => {
             props={props}
           />
           <Product
+            id={1005}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/1/optimized/11074291_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&$filtersm$&fmt=webp"
             title="Sundry"
             caption="High/Low Tie Dyed Sweatshirt"
@@ -54,6 +60,7 @@ const Home = (props) => {
             props={props}
           />
           <Product
+            id={1006}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/5/optimized/10812825_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&$filtersm$&fmt=webp"
             title="Maje"
             caption="Terrasse Neoprene Hooded Sweatshirt"
@@ -61,6 +68,7 @@ const Home = (props) => {
             props={props}
           />
           <Product
+            id={1007}
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/0/optimized/10629670_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&$filtersm$&fmt=webp"
             title="
           Cotton Citizen"

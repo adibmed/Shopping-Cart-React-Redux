@@ -1,0 +1,15 @@
+.cart {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding-top: 60px;
+} 
+.cart__header {
+    margin-top: 20px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}

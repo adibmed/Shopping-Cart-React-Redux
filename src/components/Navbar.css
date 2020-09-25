@@ -4,6 +4,11 @@
   justify-content: space-between;
   padding: 20px 10px;
   border-bottom: 1px solid lightgray;
+  position: fixed; 
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #f7f7f7;
 }
 
 .navbar > a {
