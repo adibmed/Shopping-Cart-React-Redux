@@ -8,7 +8,7 @@ function Poroduct({image,title, caption, price}) {
             <h1>{title}</h1>
             <h2>{caption}</h2>
             <h2>USD {price}</h2>
-            <button>ADD TO CART</button>
+            <button className="product__button">ADD TO CART</button>
         </div>
     )
 }
