@@ -4,7 +4,6 @@ function Navbar() {
   return (
     <div>
       <nav>
-        <h2>Shop</h2>
         <ul>
           <li>
             <a href="#">Home</a>
