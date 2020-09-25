@@ -8,9 +8,19 @@ const mapStateToProps = (state) => ({
 
 function Cart({basketProps}) {
   console.log("basketProps 👉 ", basketProps);
+
+  let productInCart = [];
+
+  Object.keys(basketProps.products).forEach(function(item){
+      console.log(item.title)
+  })
+
   return (
     <div className="cart">
-      <h1>I am a Cart</h1>
+    <h1>Cart</h1>{
+    basketProps.products.map((product)=>(
+      <h1>{product.title}</h1>
+    ))}
     </div>
   );
 }
