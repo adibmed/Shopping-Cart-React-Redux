@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Cart from "./components/Cart";
 import { Provider } from "react-redux";
 import store from "./store/store";
-import { BrowserRouter, Switch, Router } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -13,8 +13,10 @@ function App() {
       <div className="app">
         <BrowserRouter>
           <Navbar />
-          <Router path="/" component={Home} />
-          <Router path="/cart" component={Cart} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/cart" component={Cart} />
+          </Switch>
         </BrowserRouter>
       </div>
     </Provider>

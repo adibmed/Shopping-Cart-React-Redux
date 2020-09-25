@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
 import { connect } from "react-redux";
-
 import { getNumbers } from "../actions/getAction";
+import { Link } from "react-router-dom";
 
 const mapStateToProps = (state) => ({
   basketProps: state.basketState,
@@ -17,12 +17,16 @@ function Navbar(props) {
 
   return (
     <div className="navbar">
-      <h1 className="navbar__title">Title</h1>
+      <Link to="/" className="navbar__title">
+        Title
+      </Link>
       <div className="navbar__menu">
         <h2>Home</h2>
         <h2>Contact</h2>
       </div>
-      <h1 className="navbar__cart">Cart({props.basketProps.basketNumbers})</h1>
+      <Link to="/cart" className="navbar__cart">
+        Cart({props.basketProps.basketNumbers})
+      </Link>
     </div>
   );
 }
