@@ -2,12 +2,15 @@ import React from "react";
 import Product from "./components/Product";
 import "./Home.css";
 import { connect } from "react-redux";
-import {addBasket} from './actions/addBasket';
+import { addBasket } from "./actions/AddAction";
 
-function Home() {
+const Home = (props) => {
+  console.log(props);
+
   return (
     <div className="home">
-      <div className="home__container">
+      <button onClick={props.addBasket}>Click</button>
+      {/* <div className="home__container">
         <div className="home__containerRow">
           <Product
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/10713533_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$&fmt=webp"
@@ -61,9 +64,9 @@ function Home() {
             price="225.00"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
-}
+};
 
 export default connect(null, addBasket)(Home);
