@@ -2,11 +2,11 @@ import React from "react";
 import Product from './components/Product';
 import './Home.css';
 
-import Navbar from "./components/Navbar";
+
 function Home() {
   return (
     <div className="home">
-      <Navbar />
+     
       <div className="home__container">
         <div className="home__containerRow">
         <Product 
