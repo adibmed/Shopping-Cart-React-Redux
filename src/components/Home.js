@@ -1,8 +1,8 @@
 import React from "react";
-import Product from "./components/Product";
+import Product from "./Product";
 import "./Home.css";
 import { connect } from "react-redux";
-import { addBasket } from "./actions/AddAction";
+import { addBasket } from "../actions/AddAction";
 
 const Home = (props) => {
   console.log(props);
@@ -69,4 +69,4 @@ const Home = (props) => {
   );
 };
 
-export default connect(null, addBasket)(Home);
+export default connect(null, { addBasket })(Home);

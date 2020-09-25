@@ -8,7 +8,7 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_PRODUCT_BASKET:
       return {
-        basketNumbers: 19999999999999999,
+        basketNumbers: state.basketNumbers + 1,
       };
     case GET_NUMBERS_BASKET:
       return {
