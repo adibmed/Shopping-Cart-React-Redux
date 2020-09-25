@@ -10,7 +10,7 @@ const Home = (props) => {
   return (
     <div className="home">
       <button onClick={props.addBasket}>Click</button>
-      {/* <div className="home__container">
+      <div className="home__container">
         <div className="home__containerRow">
           <Product
             image="https://images.bloomingdalesassets.com/is/image/BLM/products/3/optimized/10713533_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&$filtersm$&fmt=webp"
@@ -64,7 +64,7 @@ const Home = (props) => {
             price="225.00"
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
