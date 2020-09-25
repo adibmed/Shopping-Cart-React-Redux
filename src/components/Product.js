@@ -16,6 +16,7 @@ function Poroduct({ image, title, caption, price, props }) {
               title: title,
               caption: caption,
               price: price,
+              quantity: 1,
             })
           }
           className="product__button"

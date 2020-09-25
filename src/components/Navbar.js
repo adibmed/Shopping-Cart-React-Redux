@@ -9,8 +9,6 @@ const mapStateToProps = (state) => ({
 });
 
 function Navbar(props) {
-  console.log("NAVBAR>>>", props);
-
   useEffect(() => {
     getNumbers();
   }, []);
