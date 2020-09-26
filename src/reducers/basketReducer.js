@@ -1,4 +1,8 @@
-import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET } from "../actions/types";
+import {
+  ADD_PRODUCT_BASKET,
+  GET_NUMBERS_BASKET,
+  REMOVE_PRODUCT_BASKET,
+} from "../actions/types";
 
 const initialState = {
   basketNumbers: 0,
@@ -18,6 +22,11 @@ export default (state = initialState, action) => {
           state.cartTotal + state.products[action.payload.title]?.price,
       };
     case GET_NUMBERS_BASKET:
+      return {
+        ...state,
+      };
+    case REMOVE_PRODUCT_BASKET:
+      console.log("❌");
       return {
         ...state,
       };

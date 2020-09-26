@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartProduct.css";
 
-function CartProduct({ image, title, caption, price }) {
+function CartProduct({ id, image, title, caption, props}) {
   return (
     <div className="cartProduct">
       <img src={image} alt="" />
@@ -10,7 +10,7 @@ function CartProduct({ image, title, caption, price }) {
         <h2>{caption}</h2>
       </div>
       <div className="cartProduct__right">
-        <button>remove</button>
+        <button onClick={props.removeProduct(id)}>remove</button>
       </div>
     </div>
   );
